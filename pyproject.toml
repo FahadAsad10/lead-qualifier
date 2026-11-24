@@ -1,0 +1,16 @@
+[project]
+name = "lead-qualifier"
+version = "1.0.0"
+description = "AI lead qualification: Claude reads inbound leads and drafts replies, Python scores and routes them"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
